@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    /* FOR MAKING ENTIRE WEB PAGE BLACK IN COLOR */
+}
+
+                                  /*_______________ 1ST BLOCK STARTED__________________ */
+
+.main {
+    background-image: url("assets/images/header-image.png");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 100%; /*SAME AS THE HEIGHT OF PARENT (main) */
+    width: 100%;   /*SAME AS THE WIDTH OF PARENT (main) */
+    opacity: 0.69;
+    position: absolute; /*POSITION IN ACCORDANCE WITH PARENT's POSITION (main)*/
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;   /* MUST  !!!!!!!!!!!!!!!*/
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10; /* FOR MAKING THE ELEMENT "POP-OUT" */
+}
+
+nav button {
+    position: relative;
+    z-index: 10; /* FOR MAKING THE ELEMENT "POP-OUT" */
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   /* ALL ITEMS GET RE-ARRANGED COLUMN WISE */
+    color: white;
+    position: relative;
+    gap: 23px;               /* GAP BETWEEN EACH ITEM [here column-wise] */
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;  /* text will always starts from center */
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {     /* FOR CREATING A LINE OF SEPARATION */
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;         /* SABSE ZYADA */
+}
+
+.btn {     /* [English, Sign in, Get started] */
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021); /* TRANSPARENT */
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {         /* [Get Started] */
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {        /* [Sign In] */
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {  /* Input Email, GeT started] */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7); 
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+                                          /*_______________ 1ST BLOCK ENDED__________________ */    
+                                          
+                                          
+                                         /*_______________ 2ND BLOCK STARTED__________________ */
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;       /* MUST !!!!!!!! */
+    color: white;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {  
+    width: 555px;
+    position: relative;
+    z-index: 10;           /* IMAGE KI MONITOR SCREEN TRANSPARENT HAI.... TO VIDEO KO SCREEN KE ANDAR SHOW KRNE KE LIYE IMG KO "POP-OUT" KRTE HAI */
+}
+.secImg video {
+    position: absolute;   /*POSITION IN ACCORDANCE WITH PARENT's POSITION (secImg)*/
+    top: 51px;            /*____________________*/
+    right: 0;             /*____________________*/
+}
+
+section.first>div {     /*  TEXT  */
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+                                         /*_______________ 2ND BLOCK ENDED__________________ */
+
+                                         /*_______________ 3RD BLOCK STARTED_________________ */
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+} 
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox:hover {              /*___HOVER EFFECT ____*/
+    background-color: #414141; /*  means if we click on on any element of faqbox it changes its color  */
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);  /* PROPERTY FOR "+" svg ICON   */
+}
+
+.faqbox {
+    transition: all 1s ease-out; /*  TRANSITION   */
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;     /* MUST !!!!!!!! */
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;       /*___GRID PROPERTY USED____*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+
+                                         /*_______________ 3RD BLOCK ENDED_________________ */
+
+
+
+
+                                         /*_______________ MEDIA QUERIES_________________ */
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;    /* FOR WRAPPING INTO COLUMN WISE */
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+}
+
+
+
+
+
+
+                                         
